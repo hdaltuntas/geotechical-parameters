@@ -1,7 +1,7 @@
 import math
 
 
-def undrained_shear_strenght(sptn, pi, effective_stress, cbr, plnet, cpt):
+def undrained_shear_strength(sptn, pi, effective_stress, cbr, plnet, cpt):
     sptn60 = sptn * 0.765
 
     cu_1 = (
@@ -409,8 +409,8 @@ if choice == "1":
     cpt = float(input("qc (kPa)?: "))
     pi = liquid_limit - plastic_limit
 
-    result = undrained_shear_strenght(sptn, pi, effective_stress, cbr, plnet, cpt)
-    print("Calculated cohesion values (kPa):")
+    result = undrained_shear_strength(sptn, pi, effective_stress, cbr, plnet, cpt)
+    print("Calculated undrained shear strength values (kPa):")
     for method, cu in result.items():
         print(f"- {method}: {cu:.2f}")
 
