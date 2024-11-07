@@ -400,6 +400,7 @@ choice = input(
 
 if choice == "1":
     sptn = float(input("SPT-N?: "))
+    sptn60 = float(input("SPT-N 60?: "))
     effective_stress = float(input("Effective stress (kPa)?: "))
     liquid_limit = float(input("Liquid limit?: "))
     plastic_limit = float(input("Plastic limit?: "))
@@ -501,7 +502,7 @@ if choice == "8":
 
 
 if choice == "9":
-    ikit_limit = float(input("Liquid limit?: "))
+    liguid_limit = float(input("Liquid limit?: "))
     plastic_limit = float(input("Plastic limit?: "))
     pi = liquid_limit - plastic_limit
 
@@ -560,4 +561,3 @@ if choice == "14":
     print("Calculated dynamic friction angle values:")
     for method, phi_d in result.items():
         print(f"- {method}: {phi_d:.2f}")
-
