@@ -2,7 +2,6 @@ import math
 
 
 def undrained_shear_strength(sptn, pi, effective_stress, cbr, plnet, cpt):
-    sptn60 = sptn * 0.765
 
     cu_1 = (
     	98.1 
